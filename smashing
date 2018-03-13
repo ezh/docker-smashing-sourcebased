@@ -5,4 +5,4 @@
 
 [[ -e "/dashboard/project/.run" ]] && { sh /dashboard/project/.run; }
 
-exec smashing "$@"
+exec "$@"

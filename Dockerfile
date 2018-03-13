@@ -10,7 +10,7 @@ ENV BUNDLE_PATH="$GEM_HOME" \
     BUNDLE_APP_CONFIG="$GEM_HOME"
 ENV PATH $BUNDLE_BIN:$PATH
 
-RUN apk update && apk add make gcc g++ nodejs
+RUN apk update && apk add make gcc g++ nodejs less
 
 RUN cd /dashboard \
     && gem install bundler \

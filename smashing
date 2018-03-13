@@ -1,8 +1,8 @@
 #!/bin/sh
 #
 
-[[ -e "/dashboard/project/.run-once" ]] && { sh /dashboard/project/.run-once; rm /dashboard/project/.bundle; }
+[[ -e "/dashboard/project/.run-once" ]] && { sh /dashboard/project/.run-once; rm /dashboard/project/.run-once; }
 
-[[ -e "/dashboard/project/.run" ]] && sh /dashboard/project/.run
+[[ -e "/dashboard/project/.run" ]] && { sh /dashboard/project/.run; }
 
 exec smashing "$@"
